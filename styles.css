@@ -1,0 +1,149 @@
+:root {
+  font-size: calc(.6em + 1vw);
+  /*font-family: 'Segoe UI', Arial, Helvetica, 'Lucida Sans', Verdana, sans-serif;*/
+  background-color: rgb(16, 37, 63);
+  color: white;
+  /*text-align: center;*/
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: 'Segoe UI', Arial, Helvetica, 'Lucida Sans', Verdana, sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+:focus { /*:focus-visible*/ /*For when element has :focus*/
+  outline: solid 1px goldenrod;
+  outline-offset: 4px;
+}
+
+div, section, footer, aside {
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, .6);
+}
+
+a {
+  color: goldenrod;
+}
+
+section {
+  margin-bottom: 5vh;
+  padding: 5vh 5vw;
+}
+
+body {
+  margin: 0;
+  padding: 5vh 10vw;
+  width: 100vw;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  /*justify-content: flex-start;*/
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh;
+}
+
+.app-heading {
+  text-align: center;
+}
+
+#app-dp {
+  /*position: fixed;*/
+  display: block;
+  height: calc(80px + 1vw);
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, .6);
+}
+
+#app-job-title {
+  display: block;
+  border-left: 8px solid goldenrod;
+  padding: 5px 5px;
+  background-color: rgba(218, 165, 32, 0.15);
+}
+
+aside {
+  width: 100vw;
+  padding: 10px;
+  margin: 3vh 0 6vh 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-shadow: none;
+}
+
+aside * {
+  box-shadow: none;
+}
+
+aside > * {
+  max-width: 33%;
+  margin-bottom: initial;
+  padding: 0;
+}
+
+aside > :not(:last-child) {
+  margin-bottom: 3vh;
+  margin-right: 30px;
+}
+
+section[title="Skills"] p {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+section[title="Skills"] p span {
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+section[title="Skills"] p i {
+  color: goldenrod;
+}
+
+.project-description {
+  display: block;
+  margin-bottom: 2vh;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+#portfolio-project {
+  margin-top: 5vh;
+}
+
+@media screen and (max-width: 500px) {
+  section {
+    padding: 5vh 5vw 5vh 10vw;
+  }
+
+  aside > * {
+    padding: 0;
+    max-width: initial;
+  }
+
+  aside > :not(:last-child) {
+    margin-bottom: 3vh;
+    margin-right: 20px;
+  }
+
+  section[title="Skills"] > :not(.app-heading) {
+    margin-left: 7vw
+  }
+
+  body {
+    padding: 5vh 4vw;
+  }
+}
