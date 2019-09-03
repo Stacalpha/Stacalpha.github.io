@@ -182,5 +182,53 @@
         </li>
       </ul>
   </section>
+
+  <footer title="Contact Form">
+    <h2 class="app-heading">
+      Get in touch with me.
+    </h2>
+
+    <form class="contact-form">
+      <label>
+        Name
+        <input 
+          type="text"  required
+          name="name" minlength="4"
+          placeholder="Jane Doe"
+        >
+      </label>
+
+      <label>
+        eMail Address
+        <input 
+          type="email" 
+          name="email" required
+          placeholder="somebody@example.com"
+        >
+      </label>
+
+      <label>
+        Title
+        <input 
+          type="text" 
+          name="title" required
+          placeholder="Title of your message."
+        >
+      </label>
+
+      <label>
+        Message
+        <textarea 
+          name="message" minlength="20" 
+          required
+          placeholder="Your message goes here...     20 characters minimum."
+        ></textarea>
+      </label>
+
+      <button type="submit">
+        Send Message
+      </button>
+    </form>
+  </footer>
 </body>
 </html>
