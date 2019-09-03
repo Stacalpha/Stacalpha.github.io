@@ -175,6 +175,10 @@ form button {
     padding: 5vh 5vw 5vh 10vw;
   }
 
+  aside {
+    margin-bottom: 5px;
+  }
+
   aside > * {
     padding: 0;
     max-width: initial;
